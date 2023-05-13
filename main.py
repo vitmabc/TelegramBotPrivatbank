@@ -55,7 +55,7 @@ def start(message):
     elif is_user_active(message.from_user.id) == 0:
         bot.send_message(message.chat.id, "Адміністратор ще не підтвердив Вам доступ до боту",
                          parse_mode="html")
-    elif is_user_active(message.from_user.id) == 0:
+    elif is_user_active(message.from_user.id) == 1:
         draw_button(message.chat.id)
 
 
